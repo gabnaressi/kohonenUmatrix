@@ -5,11 +5,13 @@ Plots a proper SOM U-matrix for a Kohonen object.
 Currently supports symmetrical hexagonal grids only.
 
 ## Usage
-```
+```R
+library(kohonen)
+
 data(iris)
 
-som_grid <- (xdim=2, ydim=2, topo='hexagonal')
-som_model <- kohonen::som(iris[,1:4], som_grid, rlen=100)
+som_grid <- somgrid(xdim=2, ydim=2, topo='hexagonal')
+som_model <- kohonen::som(as.matrix(iris[,1:4]), som_grid, rlen=100)
 
 source(Umatrix.R)
 umatrix <- getUmatrix(som_model)
