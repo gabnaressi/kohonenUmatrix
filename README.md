@@ -1,5 +1,11 @@
-# kohonenUmatrix
+# Kohonen U-matrix
 Plots a proper SOM U-matrix for a Kohonen object.
+
+![Example](https://github.com/gabnaressi/kohonenUmatrix/blob/master/Rplot02.jpeg "Example")
+
+
+
+
 
 ## Limitations
 Currently supports symmetrical hexagonal grids only.
