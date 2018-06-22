@@ -1,11 +1,11 @@
 # kohonenUmatrix
 Plots a proper SOM U-matrix for a Kohonen object.
 
-##Limitations
+## Limitations
 Currently supports symmetrical hexagonal grids only.
 
-##Usage
-`
+## Usage
+```
 data(iris)
 
 som_grid <- (xdim=2, ydim=2, topo='hexagonal')
@@ -15,12 +15,12 @@ source(Umatrix.R)
 umatrix <- getUmatrix(som_model)
 plotUmatrix(umatrix)
 
-`
-##dependencies
+```  
+## Dependencies
 Please install the following packages:
--plotrix
+* plotrix
 
-##Parameters
--palette: the default is `colorRampPalette(c('lightblue','black'))`.
--contrast: lower this parameter for more contrast on your plot. Default: 255.
--line: The hexagon's borders. Default is "transparent". Black and white may also look good.
+## Parameters
+* palette: the default is `colorRampPalette(c('lightblue','black'))`.
+* contrast: lower this parameter for more contrast on your plot. Default: 255.
+* line: The hexagon's borders. Default is "transparent". Black and white may also look good.
